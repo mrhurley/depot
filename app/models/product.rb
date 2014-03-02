@@ -19,7 +19,7 @@ validates :image_url, allow_blank: true, format: {
 	private
 
 		# ensure that there are no line items referencing this product
-		def ensure_not_refernced_by_any_line_item
+		def ensure_not_referenced_by_any_line_item
 			if line_items.empty?
 				return true
 			else
